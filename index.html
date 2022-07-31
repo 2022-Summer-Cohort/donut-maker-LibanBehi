@@ -4,10 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/DonutMakerStyle.css">
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a id="MyBtn">About</a>
+        <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
+        <a href="https://github.com/LibanBehi/LibanBehi.github.io">Contact</a>
+      </div>
+    </div>
+    <header class="header"> Freds Donut Bakery</header>
+    <h1 id="donutcount">0</h1> 
+    <button id ="bakeDonut">Bake Donut</button> 
+    <br>
+    <h1>Auto-Clickers-Amount</h1>
+    <h1 id="autoclickers">0</h1>
+    <h1 >Auto-Clickers-Cost</h1>
+    <h1 id="autoclickerscost">100</h1>
+    <button id="buyautoclickers">Buy Auto Clickers</button>
+    <br>
+    <h1 >Donut-Multiplier-Amount</h1>
+    <h1 id="donutmultipliercount">0</h1>
+    <h1 >Donut-Multiplier-Cost</h1>
+    <h1 id="donutmultipliercost">10</h1>
+    <button id="buydonutmultiplier">Buy Donut Multiplier</button>
+  
+    <button class="reset"> RESET </button>
+
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Cookie Clicker is a JavaScript-based incremental game written by French programmer Julien Thiennot, who is better known as "Orteil", and released on August 10, 2013. The aim of the game is to bake cookies at as great a rate as possible; as such, there is no true end to the gameplay.
+    
+        </p>
+      </div>
+    
+    <script src="./index.js"type ="module"></script>
+    
   </body>
+  <footer>(©) Liban Behi</footer>
 </html>
