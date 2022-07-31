@@ -4,6 +4,8 @@ let donutMaker = new DonutMaker(0,0,0);
 const donutCountEl= document.querySelector("#donutcount");
 const autoClickersEl = document.querySelector("#autoclickers");
 const donutMultiplierEl = document.querySelector("#donutmultipliercount");
+const autoClickersCostEl = document.querySelector("#autoclickerscost");
+const donutMultiplierCostEl = document.querySelector("#donutmultipliercost");
 let button = document.querySelector("#bakeDonut");
 button.addEventListener("click", function(){
   donutMaker.bakeDonut();
@@ -14,6 +16,9 @@ autoClickerBtn.addEventListener("click", function(){
 donutMaker.buyautoclicker()
 donutCountEl.innerText = Math.round(donutMaker.donutCount);
 autoClickersEl.innerText = donutMaker.autoClickers;
+autoClickersCostEl.innerText = Math.round(donutMaker.autoClickersCost);
+
+
 })
 
 let multiplierBtn = document.querySelector("#buydonutmultiplier");
@@ -21,6 +26,7 @@ multiplierBtn.addEventListener("click", function(){
   donutMaker.buydonutmultiplier();
   donutMultiplierEl.innerText = donutMaker.donutMultiplier;
   donutCountEl.innerText = Math.round(donutMaker.donutCount);
+  donutMultiplierCostEl.innerText = Math.round(donutMaker.donutMultiplierCost);
 
 })
 setInterval(() => {
@@ -61,3 +67,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
